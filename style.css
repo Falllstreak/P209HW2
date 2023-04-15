@@ -1,3 +1,6 @@
 body {
-    color: red;
+    background-color: teal;
+    color: yellow;
+    line-height: 1.5;
+    font-size: 20px;
 }

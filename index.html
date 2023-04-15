@@ -1,41 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <title>Pizza Form</title>
-    <link rel="stylesheet" type="text/css" href="/P209HW2/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
 
   <body>
 
-  <form name="mainFrom" onsubmit="return false">
+  <form id="pizzaForm" name="mainFrom" onsubmit="return false">
 
     <fieldset id="Order">
       <legend>Pizza Order</legend>
 
-  <input type="radio" id="small" name="piesize" value="7.00">
-  <label for="small">Small</label><br>
-  <input type="radio" id="medium" name="piesize" value="10.00">
-  <label for="medium">Medium</label><br>
-  <input type="radio" id="large" name="piesize" value="14.00">
-  <label for="large">Large</label>
+  <input type="radio" id="small" name="piesize" value=7.00>
+  <label for="small">Small</label><br>
+  <input type="radio" id="medium" name="piesize" value=10.00>
+  <label for="medium">Medium</label><br>
+  <input type="radio" id="large" name="piesize" value=14.00>
+  <label for="large">Large</label>
 
 <br>
 
-<select id="toppings" name="toppings">
-  <option value="2.00">One Topping</option>
-  <option value="3.00">Two Toppings</option>
-  <option value="notop">No Toppings</option>
+<select id="toppings" name="topy">
+  <option value=2.00 selected="selected">One Topping</option>
+  <option value=3.00>Two Toppings</option>
+  <option value=0.00>No Toppings</option>
 </select>
 
       <input type="submit" value="Submit" onclick="formSubmitEvent()">
-      <legend>Order Total:</legend>
+      <br><br>
+      <p>OrderTotal: </p>
       <div id="totalPrice"></div>
 
     </fieldset>
 
   </form>
-  <script type="text/javascript" src="/javascript.js"></script>
-
+  <script src="JavaScript.js"></script>
 </body>
 </html>
