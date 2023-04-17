@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
   
   function formSubmitEvent() {
     document.getElementById("totalPrice").innerHTML = "";
-    var pie = document.getElementsByTagName('input');
-    var tops = document.getElementById('toppings');
-    var topsval = parseFloat(tops.value);
-    var total = 0.0
+    let pie = document.getElementsByTagName('input');
+    let tops = document.getElementById('toppings');
+    let topsval = parseFloat(tops.value);
+    let total = 0.0
   
     for (i = 0; i < pie.length; i++) {
   
